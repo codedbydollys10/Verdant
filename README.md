@@ -1,8 +1,12 @@
 <div align="center">
+  
+# 🌿 Verdant
 
-<img src="docs/images/banner.svg" alt="Verdant - Restore the balance. Shape a greener future." width="100%">
+### Restore the balance. Shape a greener future.
 
-<br><br>
+### An immersive educational adventure game about the bond between human actions and the natural world.
+
+<br>
 
 [![Godot 4.3](https://img.shields.io/badge/Godot-4.3-478CBF?style=flat-square&logo=godotengine&logoColor=white)](https://godotengine.org/)
 [![GDScript](https://img.shields.io/badge/Language-GDScript-355570?style=flat-square&logo=godotengine&logoColor=white)](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)
