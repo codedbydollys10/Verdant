@@ -1,134 +1,195 @@
-🌿 Verdant
+<div align="center">
 
-Restore the balance. Shape a greener future.
+<img src="docs/images/banner.svg" alt="Verdant - Restore the balance. Shape a greener future." width="100%">
 
-Verdant is an immersive educational adventure game that explores the relationship between human actions and the natural environment. Through exploration, quests, and interactive gameplay, players discover environmental challenges and experience how their decisions can influence the world around them.
+<br><br>
 
-Built with the Godot Engine, Verdant aims to combine engaging gameplay, environmental awareness, and interactive storytelling into a meaningful gaming experience.
+[![Godot 4.3](https://img.shields.io/badge/Godot-4.3-478CBF?style=flat-square&logo=godotengine&logoColor=white)](https://godotengine.org/)
+[![GDScript](https://img.shields.io/badge/Language-GDScript-355570?style=flat-square&logo=godotengine&logoColor=white)](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)
+[![Genre](https://img.shields.io/badge/Genre-Educational%20Adventure-2E7D32?style=flat-square)](#-overview)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](#-contributing)
 
----
+**Explore. Learn. Make a difference.**
+A 3D adventure about how our choices shape the natural world.
 
-🎮 Overview
+[Overview](#-overview) ·
+[Features](#-features) ·
+[Getting Started](#-getting-started) ·
+[Project Structure](#-project-structure) ·
+[Roadmap](#-roadmap) ·
+[Contributing](#-contributing)
 
-Verdant invites players into a world where the environment needs attention and care. Players explore their surroundings, interact with the world, complete objectives, and learn about environmental sustainability through gameplay.
+</div>
 
-Rather than simply presenting information, Verdant encourages players to engage with environmental themes through exploration and interactive challenges.
-
-✨ Key Features
-
-- 🌍 Interactive World: Explore a 3D environment filled with locations and objects to discover.
-- 🧭 Exploration: Navigate the game world and uncover different areas.
-- 📜 Quest System: Complete objectives and progress through in-game challenges.
-- 💬 Interactive Dialogue: Engage with characters and discover information through conversations.
-- 🎒 Inventory System: Manage items collected throughout the adventure.
-- 🗺️ Mini-Map: Navigate the environment and understand your surroundings.
-- 🌱 Environmental Awareness: Explore themes related to climate change, sustainability, and the impact of human activities.
-- 🎵 Immersive Experience: Use visual elements, sound, and music to create an engaging atmosphere.
-
-Feature availability may vary as development progresses.
+<br>
 
 ---
 
-🛠️ Technology Stack
+## 🌍 Overview
 
-Technology| Purpose
-Godot Engine 4.3| Game engine and development environment
-GDScript| Gameplay logic and scripting
-Git| Version control
-GitHub| Source code hosting and project management
+**Verdant** is an immersive educational adventure game that explores the relationship between human actions and the natural environment. You explore a living world, talk to the people in it, take on quests, and discover environmental challenges first-hand.
 
----
+Instead of handing players a wall of facts, Verdant lets them **learn by doing**: investigate, make decisions, and see how those decisions influence the world around them.
 
-📁 Project Structure
+> *Games can do more than entertain. They can spark curiosity and change how we see the world.*
 
-The project is organized into source files, game assets, scripts, interfaces, and supporting documentation.
+<br>
 
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🧭 Explore
+Roam a **3D world** full of locations and objects to discover, guided by a **mini-map** that keeps you oriented.
+
+### 📜 Quests
+Follow objectives and work through **in-game challenges** that turn environmental ideas into action.
+
+### 💬 Dialogue
+Talk with characters and uncover information through **interactive conversations**.
+
+</td>
+<td width="50%" valign="top">
+
+### 🎒 Inventory
+Collect and manage **items** you find throughout your adventure.
+
+### 🌱 Environmental Themes
+Engage with **climate change, sustainability**, and the real impact of human activity.
+
+### 🎵 Atmosphere
+Visuals, **sound, and music** combine to create a world worth caring about.
+
+</td>
+</tr>
+</table>
+
+> [!NOTE]
+> Feature availability may vary as development progresses.
+
+<br>
+
+## 🛠️ Tech Stack
+
+| | Technology | Purpose |
+|:---:|---|---|
+| 🎮 | **[Godot Engine 4.3](https://godotengine.org/)** | Game engine and editor |
+| 📝 | **GDScript** | Gameplay logic and scripting |
+| 🔀 | **Git** | Version control |
+| 🐙 | **GitHub** | Hosting and project management |
+
+<br>
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **[Godot Engine 4.3](https://godotengine.org/download)** (or a compatible version)
+- **[Git](https://git-scm.com/)** (to clone the repository)
+- Any platform Godot supports: Windows, Linux, or macOS
+
+### Run the game
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/codedbydollys10/verdant.git
+
+# 2. Enter the project folder
+cd verdant
+```
+
+Then in Godot:
+
+1. Open **Godot Engine** and click **Import**
+2. Select the `project.godot` file in the project folder
+3. Press **▶ Run Project** (`F5`) to play
+
+<br>
+
+## 📁 Project Structure
+
+```text
 Verdant/
-├── documents/
+├── documents/                       # Specifications and design docs
 │   ├── Functional_Specifications.md
 │   └── technical_specifications.md
-│
-├── managements/
-│
+├── managements/                     # Project management files
 ├── src/
 │   ├── assets/
 │   │   ├── characters/
-│   │   ├── sounds/
+│   │   ├── dialogue/
 │   │   ├── fonts/
 │   │   ├── music/
-│   │   ├── textures/
 │   │   ├── objects/
-│   │   └── dialogue/
-│   │
-│   ├── scripts/
-│   └── interfaces/
-│
+│   │   ├── sounds/
+│   │   └── textures/
+│   ├── scripts/                     # GDScript gameplay logic
+│   └── interfaces/                  # UI scenes
+├── docs/images/                     # README images
 ├── project.godot
 ├── README.md
 └── LICENSE
+```
 
-Note: This is a representative structure. Update folder names and documentation paths to match the actual files in the repository.
+> [!TIP]
+> This is a representative layout. Adjust folder names to match the repository as it evolves.
 
----
+<br>
 
-🚀 Getting Started
+## 🎯 Goals
 
-Prerequisites
+- 🌿 Encourage environmental awareness through interactive gameplay
+- 🧩 Make educational content engaging with exploration and quests
+- 🌎 Show how games can communicate real-world challenges
+- 🎒 Blend learning, discovery, and problem-solving into one enjoyable experience
 
-Before running Verdant, ensure that you have:
+<br>
 
-- A computer running Windows, Linux, or another supported Godot platform.
-- Godot Engine 4.3 or a compatible version.
-- Git, if you want to clone the repository and track changes.
+## 🔮 Roadmap
 
-Installation
+- [ ] More explorable locations and quests
+- [ ] Richer interactive environmental challenges
+- [ ] Expanded characters and branching dialogue
+- [ ] Dynamic world changes based on player decisions
+- [ ] Improved accessibility, interface design, and gameplay feedback
 
-1. Clone the repository
+<br>
 
-git clone https://github.com/YOUR-USERNAME/verdant.git
+## 🤝 Contributing
 
-2. Navigate to the project directory
+Contributions, ideas, and feedback are welcome!
 
-cd verdant
+1. **Fork** the repository
+2. **Create** a branch: `git checkout -b feature/your-feature`
+3. **Commit** your changes: `git commit -m "Add your feature"`
+4. **Push** the branch: `git push origin feature/your-feature`
+5. **Open** a Pull Request
 
-3. Open the project in Godot
+Found a bug or have an idea? [Open an issue](https://github.com/codedbydollys10/verdant/issues).
 
-Launch Godot Engine, select Import, locate the "project.godot" file, and import the project.
+<br>
 
-4. Run the game
+## 📄 License
 
-Open the project in the Godot editor and press the Run Project button to launch the game.
+Verdant is released under the **[MIT License](LICENSE)**. You are free to use, modify, and distribute it, provided the license notice is included.
 
----
+<br>
 
-🎯 Project Goals
+<div align="center">
 
-Verdant aims to:
+### 🌱 Our Vision
 
-- Encourage environmental awareness through interactive gameplay.
-- Make educational content more engaging through exploration and quests.
-- Demonstrate how games can communicate real-world challenges.
-- Create an enjoyable experience that combines learning, discovery, and problem-solving.
+*Verdant is a step toward making environmental learning interactive, engaging, and memorable.*
 
----
+<br>
 
-🔮 Future Possibilities
+**🌿 Restore the balance. Shape a greener future. 🌿**
 
-Potential areas for future development include:
+<br>
 
-- Additional explorable locations and quests.
-- More interactive environmental challenges.
-- Expanded character interactions and branching dialogue.
-- Dynamic environmental changes based on player decisions.
-- Improved accessibility, interface design, and gameplay feedback.
+<sub>Built with ♥ and Godot</sub>
 
----
-
-🌱 Our Vision
-
-We believe games can do more than entertain. They can encourage curiosity, inspire reflection, and help players see the world from a different perspective.
-
-Verdant is a step toward making environmental learning interactive, engaging, and memorable.
-
----
-
+</div>
